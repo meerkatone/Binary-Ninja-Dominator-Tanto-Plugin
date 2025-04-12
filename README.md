@@ -14,8 +14,7 @@ To generate a complete Mermaid diagram of a function's dominator tree:
 from dominator_plugin import generate_dominator_mermaid
 
 # Get current binary view and function
-func = here.function
-diagram = generate_dominator_mermaid(bv, func.start)
+diagram = generate_dominator_mermaid(bv, function_address)
 print(diagram)
 ```
 
@@ -61,11 +60,11 @@ The plugin includes several utility functions to generate Mermaid diagrams for d
 from dominator_plugin import generate_dominator_mermaid, generate_post_dominator_mermaid
 
 # Generate dominator tree diagram
-dominator_diagram = generate_dominator_mermaid(bv, 0x8048000)  # Replace with your function address
+dominator_diagram = generate_dominator_mermaid(bv, function_address)  # Replace with your function address
 print(dominator_diagram)
 
 # Generate post-dominator tree diagram
-post_dom_diagram = generate_post_dominator_mermaid(bv, 0x8048000)
+post_dom_diagram = generate_post_dominator_mermaid(bv, function_address)
 print(post_dom_diagram)
 ```
 
