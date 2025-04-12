@@ -17,7 +17,9 @@ from dominator_plugin import generate_dominator_mermaid
 func = here.function
 diagram = generate_dominator_mermaid(bv, func.start)
 print(diagram)
-```# Dominator Analysis Plugin for Binary Ninja
+```
+
+# Dominator Analysis Plugin for Binary Ninja
 
 This plugin extends the Tanto graph visualization plugin for Binary Ninja by adding advanced dominator and post-dominator tree views. These views help analyze control flow and identify key blocks in a function, particularly useful for advanced program analysis tasks.
 
